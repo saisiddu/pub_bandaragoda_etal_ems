@@ -1,6 +1,4 @@
 # pub_bandaragoda_etal_ems
-Enabling Collaborative Numerical Modeling in Earth Sciences using Knowledge Infrastructure: Landlab Notebooks
- 
 The problem: Researchers need a modeling workflow that is flexible for developing their own code, with easy access to distributed datasets, shared on a common platform for coupling multiple models, usable by science colleagues, and with easy publication of data, code, and scientific studies.
 
 The emerging solution: Collaborate with the CUAHSI HydroShare community to use and contribute to water data software and hardware tools, so that you can focus on your science, be efficient with your time and resources, and build on existing research in multiple domains of water science.
@@ -12,8 +10,9 @@ Bandaragoda, C. J., A. Castronova, E. Istanbulluoglu, R. Strauch, S. S. Nudurupa
 ### Data and code publication
 Bandaragoda, C., A. M. Castronova, J. Phuong, E. Istanbulluoglu, S. S. Nudurupati, R. Strauch, N. Lyons (2019). Enabling Collaborative Numerical Modeling in Earth Sciences using Knowledge Infrastructure: Landlab Notebooks, HydroShare, http://www.hydroshare.org/resource/70b977e22af544f8a7e5a803935c329c
 
-To run the Notebooks on your personal computer, please see installation recommendations below.   To develop and update the Notebooks, please fork this repository and use Issues to keep in touch. 
+These Notebooks are designed to run on HydroShare (see below). To view the Notebook code (without interactive capabilities), use the Notebooks in this Github repository (Code folder).  To run the Notebooks on your personal computer, please see installation recommendations below.   To develop and update the Notebooks, please fork this repository and use Issues to keep in touch. Commits with quotes are much appreciated! 
 
+Spread love everywhere you go. Mother Teresa
 
 # Run the Notebooks on HydroShare
 Interactive Landlab notebooks are available on HydrosShare at http://www.hydroshare.org/resource/70b977e22af544f8a7e5a803935c329c. These Jupyter Notebooks are designed to introduce users to Landlab modeling framework on the [CUAHSI](www.cuahsi.org) [JupyterHub server](https://jupyter.cuahsi.org).  
