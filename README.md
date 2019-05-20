@@ -74,7 +74,6 @@ source activate MY_ENVIRONMENT_NAME
 jupyter notebook
 ```
 
-https://github.com/landlab/landlab/wiki/Installing-Landlab-with-Anaconda
 
   <h3>Test Landlab install</h3>
 <p> Once Landlab has been successfully installed, on the
@@ -93,6 +92,9 @@ https://github.com/landlab/landlab/wiki/Installing-Landlab-with-Anaconda
       > landlab.__version__
     </code>
   </p>
+  
+Read more about Installing Landlab here:
+https://github.com/landlab/landlab/wiki/Installing-Landlab-with-Anaconda
 
    <p>
      The version number should be greater than 1. You can check the version number of the most recent release <a href= "https://github.com/landlab/landlab/releases">here</a>.
