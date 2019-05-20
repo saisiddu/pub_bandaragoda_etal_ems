@@ -74,4 +74,26 @@ source activate MY_ENVIRONMENT_NAME
 jupyter notebook
 ```
 
+https://github.com/landlab/landlab/wiki/Installing-Landlab-with-Anaconda
 
+  <h3>Test Landlab install</h3>
+<p> Once Landlab has been successfully installed, on the
+    Python shell line, check to make sure it is up-to-date (note that those are
+    double underscores around version; also note that you may need to close and
+    reopen Anaconda before typing the below commands):
+  </p>
+
+  <p>
+    <code>
+      > import landlab
+    </code>
+  </p>
+  <p>
+    <code>
+      > landlab.__version__
+    </code>
+  </p>
+
+   <p>
+     The version number should be greater than 1. You can check the version number of the most recent release <a href= "https://github.com/landlab/landlab/releases">here</a>.
+   </p>
