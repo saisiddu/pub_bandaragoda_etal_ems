@@ -1,38 +1,18 @@
-# pub_bandaragoda_etal_ems
-The problem: Researchers need a modeling workflow that is flexible for developing their own code, with easy access to distributed datasets, shared on a common platform for coupling multiple models, usable by science colleagues, and with easy publication of data, code, and scientific studies.
+# Software Instructions: Online and Personal Computer
 
-The emerging solution: Collaborate with the CUAHSI HydroShare community to use and contribute to water data software and hardware tools, so that you can focus on your science, be efficient with your time and resources, and build on existing research in multiple domains of water science.
+## Online Modeling Instructions 
 
-# Citation instructions
-### Journal publication
-Bandaragoda, C. J., A. Castronova, E. Istanbulluoglu, R. Strauch, S. S. Nudurupati, J. Phuong, J. M. Adams, et al. “Enabling Collaborative Numerical Modeling in Earth Sciences Using Knowledge Infrastructure.” Environmental Modelling & Software, April 24, 2019. https://doi.org/10.1016/j.envsoft.2019.03.020.
+To open interactive Jupyter Notebooks with the CUAHSI JupyterHub server, go to the upper right corner of the resource page and click on 'Open With'. Select CUAHSI JupyterHub.  You will be connected to a virtual machine with the software environment required to execute the models.
 
-### Data and code publication
-Bandaragoda, C., A. M. Castronova, J. Phuong, E. Istanbulluoglu, S. S. Nudurupati, R. Strauch, N. Lyons (2019). Enabling Collaborative Numerical Modeling in Earth Sciences using Knowledge Infrastructure: Landlab Notebooks, HydroShare, http://www.hydroshare.org/resource/70b977e22af544f8a7e5a803935c329c
+Notebook 1: Educate by exploring rainfall driven hydrographs with Landlab: Explore_routing_tutorial.ipynb
 
-These Notebooks are designed to run on HydroShare (see below). To view the Notebook code (without interactive capabilities), use the Notebooks in this Github repository (Code folder).  To run the Notebooks on your personal computer, please see installation recommendations below.   To develop and update the Notebooks, please fork this repository and use Issues to keep in touch. Commits with quotes are much appreciated! "Spread love everywhere you go." Mother Teresa
+Notebook 2: Replicate an experiment on a watershed subset within regional Landlab landslide model to explore fire impacts. The resource was originally derived from a reproducible demonstration of the landslide modeling results from: Strauch, R., Istanbulluoglu, E., Nudurupati, S. S., Bandaragoda, C., Gasparini, N. M., and Tucker, G. E.: (2018) A hydro-climatological approach to predicting regional landslide probability using Landlab, Earth Surf. Dynam. Discuss., https://doi.org/10.5194/esurf-6-49-2018:  Replicate_landslide_model_for_fire.ipynb
 
-# Run the Notebooks on HydroShare
-Interactive Landlab notebooks are available on HydrosShare at http://www.hydroshare.org/resource/70b977e22af544f8a7e5a803935c329c. These Jupyter Notebooks are designed to introduce users to Landlab modeling framework on the [CUAHSI](www.cuahsi.org) [JupyterHub server](https://jupyter.cuahsi.org).  
+Notebook 3: Reuse ecohydrology model for exploring climate scenarios. The gridded meteorology forcings are pre-processed in the Notebook in NewMexico_observatory_gridmet.ipynb: Reuse_ecohydrology_observatory.ipynb
 
-To run the Notebooks on HydroShare, Sign up or Sign in at www.hydroshare.org.   
-When you [click on this resource](http://www.hydroshare.org/resource/70b977e22af544f8a7e5a803935c329c) you will see a blue 'Open With' in the top right corner.  Select the CUAHSI JupyterHub server from the dropdown list. You will be connected to a virtual machine with the software environment required to execute the models.  Once the data is transferred, you can click on each of the Notebooks. 
+## Personal Computer Installation Instructions 
 
-Notebook 1: Educate by exploring rainfall driven hydrographs with Landlab
-Explore_routing_tutorial.ipynb
-
-Notebook 2: Watershed subset within regional Landlab landslide model to explore fire impacts
-Replicate_landslide_model_for_fire.ipynb
-The resource was originally derived from a reproducible demonstration of the landslide modeling results from: Strauch, R., Istanbulluoglu, E., Nudurupati, S. S., Bandaragoda, C., Gasparini, N. M., and Tucker, G. E.: (2018) A hydro-climatological approach to predicting regional landslide probability using Landlab, Earth Surf. Dynam. Discuss., https://doi.org/10.5194/esurf-6-49-2018.
-
-Notebook 3: Reuse ecohydrology model for exploring climate scenarios
-Reuse_ecohydrology_observatory.ipynb
-The gridded meteorology forcings are pre-processed in the Notebook in NewMexico_observatory_gridmet.ipynb.
-
-# Installation Instructions to run the Notebooks on a personal computer
-
-
-## Packages
+### Packages
 
 The notebooks included in this resource require the following Python packages:
 
@@ -59,7 +39,7 @@ or
 $ pip list
 ```
 
-## Creating a Working Environment
+### Creating a Working Environment
 
 We recommend using Anaconda to create a fresh Python environment with all dependencies installed. After installing Anaconda, simply run the commands below with your desired environment name in place of `MY_ENVIRONMENT_NAME`:
 
@@ -73,29 +53,38 @@ activate the environment and start a jupyter server
 source activate MY_ENVIRONMENT_NAME
 jupyter notebook
 ```
+### Debugging a Working Environment
+Are you getting errors?  Here are some suggested steps. If you still have issues, email help@cuahsi.org or reach out to us (comment on this resource or see emails in HydroShare profiles) and we will invite you to the HydroShare Slack #landlab channel. 
+
+Bug: PackagesNotFound
+
+```
+PackagesNotFoundError: The following packages are not available from current channels.
+```
+
+Reduce the number of packages that were not available by running the following command
+
+```
+conda config --append channels conda-forge
+```
+
+Bug: Conda vs.Pip Install
+
+If you get errors for a few packages, remove them from the requirements.txt file until you successfully created the conda environment.
+
+```
+conda create -n MY_ENVIRONMENT_NAME --file requirements.txt
+```
+
+Any packages that didn't get installed during creation of conda environment can be pip installed separately in the newly created conda environment.
+for example: 
+
+```
+pip install hs-restclient==1.3.3
+```
+
+### Reproducible Quote of the Day:
+
+"The product of mental labor - science - always stands far below its value, because the labor-time necessary to reproduce it has no relation at all to the labor-time required for its original production."  Karl Marx
 
 
-  <h3>Test Landlab install</h3>
-<p> Once Landlab has been successfully installed, on the
-    Python shell line, check to make sure it is up-to-date (note that those are
-    double underscores around version; also note that you may need to close and
-    reopen Anaconda before typing the below commands):
-  </p>
-
-  <p>
-    <code>
-      > import landlab
-    </code>
-  </p>
-  <p>
-    <code>
-      > landlab.__version__
-    </code>
-  </p>
-  
-Read more about Installing Landlab here:
-https://github.com/landlab/landlab/wiki/Installing-Landlab-with-Anaconda
-
-   <p>
-     The version number should be greater than 1. You can check the version number of the most recent release <a href= "https://github.com/landlab/landlab/releases">here</a>.
-   </p>
