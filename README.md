@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/187289993.svg)](https://zenodo.org/badge/latestdoi/187289993)
+
 # Software Instructions: Online and Personal Computer
 
 ## Online Modeling Instructions 
