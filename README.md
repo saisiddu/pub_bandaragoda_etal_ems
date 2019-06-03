@@ -1,5 +1,16 @@
 [![DOI](https://zenodo.org/badge/187289993.svg)](https://zenodo.org/badge/latestdoi/187289993)
 
+### Suggested Citations: 
+**Code**
+Christina Bandaragoda, Anthony Castronova, Jimmy Phuong, Erkan Istanbulluoglu, Sai Siddhartha Nudurupati, Ronda Strauch, … Katherine Barnhart. (2019, May 30). ChristinaB/pub_bandaragoda_etal_ems: First release for Environmental Modeling and Software (Version v1.0.0). Environmental Modeling and Software. Zenodo. http://doi.org/10.5281/zenodo.3235025
+
+**Publication**
+This release serves as code for: Bandaragoda, C. J., A. Castronova, E. Istanbulluoglu, R. Strauch, S. S. Nudurupati, J. Phuong, J. M. Adams, et al. "Enabling Collaborative Numerical Modeling in Earth Sciences Using Knowledge Infrastructure." Environmental Modelling & Software, April 24, 2019. https://doi.org/10.1016/j.envsoft.2019.03.020.
+
+**Data**
+This code and data is configured to run from this HydroShare server using the CUAHSI JupyterHub server: Bandaragoda, C., A. M. Castronova, J. Phuong, E. Istanbulluoglu, S. S. Nudurupati, R. Strauch, N. Lyons, K. Barnhart (2019). Enabling Collaborative Numerical Modeling in Earth Sciences using Knowledge Infrastructure: Landlab Notebooks, https://zenodo.org/badge/latestdoi/187289993, accessed 5/30/2019, replicated in HydroShare at: https://doi.org/10.4211/hs.fdc3a06e6ad842abacfa5b896df73a76
+
+
 # Software Instructions: Online and Personal Computer
 
 ## Online Modeling Instructions 
